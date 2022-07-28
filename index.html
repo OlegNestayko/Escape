@@ -9,45 +9,53 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 	<!-- Header -->
-	<header class="header">
-		<a href="./index.html" class="header-logo link">Escape.</a>
-		<nav class="header-nav">
-			<ul class="header-list">
-				<li class="header-item">
-					<a href="#" class="link">Home</a>
-				</li>
-				<li class="header-item">
-					<a href="#" class="link">Categories</a>
-				</li>
-				<li class="header-item">
-					<a href="#" class="link">About</a>
-				</li>
-				<li class="header-item">
-					<a href="#" class="link">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+	<div class="header-container section">
+		<header class="header">
+			<a href="./index.html" class="header-logo link">Escape.</a>
+			<nav>
+				<ul class="header-list list">
+					<li class="header-item">
+						<a href="#" class="link">Home</a>
+					</li>
+					<li class="header-item">
+						<a href="#" class="link">Categories</a>
+					</li>
+					<li class="header-item">
+						<a href="#" class="link">About</a>
+					</li>
+					<li class="header-item">
+						<a href="#" class="link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
 	<!-- Main -->
 	<main>
 
 		<!-- Hero -->
 		<section class="hero">
-			<h1 class="hero-title">Let's do it together.</h1>
-			<p class="hero-text">We travel the world in search of stories. Come along for the ride.</p>
-			<a href="" class="hero-link link">View Latest Posts</a>
-			<img src="./img/hero/hero.jpg" alt="hero" width="1440">
+			<div class="hero-container section">
+				<h1 class="hero-title">Let's do it together.</h1>
+				<p class="hero-text">We travel the world in search of stories. Come along for the ride.</p>
+				<a href="#" class="hero-link link">View Latest Posts</a>
+			</div>
+			<img class="hero-img" src="./img/hero/hero.jpg" alt="hero">
+
 		</section>
 
 		<!-- Stories -->
 		<section class="stories">
-			<div class="stories-list stories-box">
+			<div class="stories-list section">
 				<ul class="stories-list menu-list list">
 					<li class="menu-item">
 						<a href="#" class="menu-link link">Nature</a>
@@ -69,25 +77,29 @@
 					</li>
 				</ul>
 			</div>
-			<div class="stories-post post-box">
+			<div class="stories-post section">
 				<h2 class="stories-post post-title">Featured Posts</h2>
 				<ul class="post-list list">
 					<li class="post-item">
-						<a href="#" class="post-link">
+						<a href="#" class="post-link link">
 							<article class="post-left">
-								<h2 class="post subtitle">The Road Ahead</h2>
+								<h2 class="post-subtitle">The Road Ahead</h2>
 								<p class="post-text">The road ahead might be paved - it might not be.</p>
-								<img src="./img/posts/mat.png" alt="Mat Vogels" class="post-img" width="26">
-								<span class="post-desc">Mat Vogels</span>
-								<time class="post-date" datetime="2015-09-15">September 25, 2015</time>
+								<div class="post-box">
+									<div>
+										<img src="./img/posts/mat.png" alt="Mat Vogels" class="post-img" width="26">
+										<span class="post-desc">Mat Vogels</span>
+									</div>
+									<time class="post-date" datetime="2015-09-15">September 25, 2015</time>
+								</div>
 							</article>
 						</a>
 					</li>
 					<li class="post-item">
-						<a href="#" class="post-link">
+						<a href="#" class="post-link link">
 							<article class="post-right">
 								<span class="post-orange">Adventure</span>
-								<h2 class="post subtitle">From Top Down</h2>
+								<h2 class="post-subtitle">From Top Down</h2>
 								<p class="post-text">Once a year, go someplace you've never been before.</p>
 								<img src="./img/posts/william.png" alt="William Wong" class="post-img" width="26">
 								<span class="post-desc">William Wong</span>
@@ -179,21 +191,17 @@
 		<!-- Stay -->
 		<section class="stay">
 			<h2 class="stay-title">Stay in Touch</h2>
-			<fieldset>
-				<legend>Mail</legend>
-				<form class="stay-form" action="#">
-					<input class="stay-input" type="text" name="user-mail" placeholder="Enter your email address">
-					<button class="stay-btn" type="submit">Submit</button>
-				</form>
-			</fieldset>
-
+			<form class="stay-form" action="#">
+				<input class="stay-input" type="text" name="user-mail" placeholder="Enter your email address">
+				<button class="stay-btn" type="submit">Submit</button>
+			</form>
 		</section>
 
 	</main>
 
 	<!-- Footer -->
 	<footer>
-		<a href="#" class="footer-logo">Escape.</a>
+		<a href="#" class="footer-logo link">Escape.</a>
 		<ul class="footer-list">
 			<li class="footer-item">
 				<a href="#" class="link">Home</a>

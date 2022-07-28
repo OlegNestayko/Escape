@@ -3,3 +3,259 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  /* Font--------------------------------- */
+  --main-font: 'Oxygen', sans-serif;
+  --secondary-font: 'Lora', serif;
+  --main-fz: 14px;
+  --secondary-fz: 12px;
+
+  /* Color-------------------------------- */
+  --main-light: #fff;
+  --title-color: #2e2e2e;
+  --subtitle-color: #101315;
+  --text-color: rgba(255, 255, 255, 0.7);
+  --card-text: #7a7a7a;
+  --card-user: #999999;
+}
+
+/* Common styles-------------------------- */
+.section {
+  margin: 0px auto;
+  max-width: 950px;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--main-fz);
+  color: var(--text-color);
+}
+
+/* Header--------------------------------- */
+.header-container {
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 10px;
+}
+
+@media (max-width: 520px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}
+
+.header-logo {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--main-light);
+}
+
+@media (max-width: 520px) {
+  .header-logo {
+    font-size: 20px;
+  }
+}
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  font-size: var(--secondary-fz);
+  line-height: 1.67;
+  color: var(--main-light);
+
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 520px) {
+  .header-item {
+    font-size: 10px;
+  }
+}
+
+.header-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Hero----------------------------------- */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 184px;
+}
+
+.hero-title {
+  padding-bottom: 20px;
+
+  font-family: 'Lora', serif;
+  font-size: 50px;
+  line-height: 1.02;
+  color: var(--main-light);
+
+  text-align: center;
+  letter-spacing: 2px;
+}
+.hero-text {
+  padding-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 1.18;
+  color: var(--text-color);
+
+  text-align: center;
+}
+.hero-link {
+  padding: 12px 30px;
+  margin-bottom: 158px;
+
+  font-size: 13px;
+  line-height: 1.54;
+  color: #ffffff;
+
+  text-align: center;
+
+  background: #dd783f;
+  border-radius: 3px;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stories-------------------------------- */
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  padding: 22px 0px;
+}
+.menu-link {
+  font-family: 'Lora', serif;
+  line-height: 1.43;
+  color: #768088;
+
+  text-align: center;
+}
+/* --------------------------------------- */
+.stories-post {
+}
+.post-box div {
+  display: flex;
+  align-items: center;
+}
+.post-title {
+  padding-top: 60px;
+
+  font-size: 20px;
+  line-height: 1.35;
+  color: var(--title-color);
+
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.post-title::after {
+  content: '';
+  display: block;
+  width: 188px;
+  height: 1px;
+  background-color: #dedede;
+  margin: 15px 376px;
+}
+
+.post-list {
+  display: flex;
+}
+
+.post-item {
+  flex: 1 1 50%;
+}
+.post-link {
+}
+
+.post-left {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  max-width: 460px;
+
+  background: url(../img/posts/shine.jpg) 0 0 / cover no-repeat;
+}
+.post-subtitle {
+  padding-top: 156px;
+  padding-bottom: 6px;
+
+  font-size: 27px;
+  line-height: 1.11;
+  color: #ffffff;
+}
+.post-subtitle:nth-child(2) {
+  padding-top: 111px;
+}
+.post-text {
+  padding-bottom: 12px;
+
+  line-height: 1.79;
+  color: var(--text-color);
+}
+
+.post-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.post-img {
+}
+.post-desc {
+  margin-left: 10px;
+}
+.post-date {
+}
+.post-right {
+  background: url(../img/posts/flashlight.jpg) 0 0 / cover no-repeat;
+}
+.post-orange {
+}
